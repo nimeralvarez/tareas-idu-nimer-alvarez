@@ -1,0 +1,114 @@
+body{
+    background-color: #f3f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+.card{
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0.2px 0.1px 3px;
+    border-radius:5px; 
+}
+
+.card__img{
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.card__img img{
+    width: 80px;
+}
+
+.card__Text{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+
+.card__Text--Descripcion{
+    font-size: small;
+    font-weight: 500;
+    padding: 0 10px 0 10px;
+}
+
+.card__Text--precio{
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card__Cantidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__Cantidad button{
+    display: inline-block;
+    font-size: 14px;
+    width: 50;
+    height: 50;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.card__Cantidad button:hover{
+    color: #ced4da;
+}
+
+.card__Cantidad input{
+    display: inline-block;
+    width: 100px;
+    margin: 0 3px;
+    padding: 6px 5px;
+    border-color: #ced4da;
+    outline: none;
+}
+
+.card-hr{
+    width: 180px;
+}
+
+.card__CarritoCompra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__CarritoCompra img{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #1749b7;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.card__CarritoCompra img:hover{
+    background-color: #456aba;
+}
