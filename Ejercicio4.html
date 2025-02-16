@@ -1,57 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 4</title>
-  </head>
-  <body>
-    <!-- aria-modal -->
-    <h1>Ejemplo de aria-modal</h1>
-    <div id="dialago" class="no-scroll">
-      <div
-        role="alertdialog"
-        aria-modal="true"
-        aria-labelledby="dialog_eliminar"
-        aria-describedby="dialog_eliminr_arch"
-      >
-        <h2 id="dialog_eliminar">Confirmation</h2>
-        <div id="dialog_eliminr_arch">
-          <p>¿Estás seguro de que quieres eliminar este archivo?</p>
-        </div>
-        <button type="button" onclick="closeDialog(this)">
-          No. Cerrar esta ventana emergente.
-        </button>
-        <button type="button" onclick="deleteFile(this)">
-          Sí. Borra el archivo.
-        </button>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/ejercicio4.css">
+    <title>Tarea-4 / Ejercicio-4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__item"><p>1</p></div>
+        <div class="container__item"><p>2</p></div>
+        <div class="container__item"><p>3</p></div>
+        <div class="container__item"><p>4</p></div>
+        <div class="container__item"><p>5</p></div>
     </div>
-
-    <!-- aria-required -->
-    <h1>Ejemplo de aria-required</h1>
-    <form action="post">
-      <label for="nombre">Nombre:</label>
-      <input id="nombre" type="text" aria-required="true" />
-      <br /><br />
-      <label for="apellido">Apellido:</label>
-      <input id="apellido" type="text" aria-required="true" />
-      <br />
-      <br />
-      <label for="direccion">Dirección:</label>
-      <input id="direccion" type="text" />
-    </form>
-
-    <!--  aria-valuemax -->
-    <h1>Ejemplo de aria-valuemax</h1>
-    <div id="valorMaximo">Valor</div>
-    <div
-      role="slider"
-      aria-valuenow="0"
-      aria-valuemin="0"
-      aria-valuemax="9"
-      aria-labelledby="valorMaximo"
-      id="valor"
-    ></div>
-  </body>
+</body>
 </html>
