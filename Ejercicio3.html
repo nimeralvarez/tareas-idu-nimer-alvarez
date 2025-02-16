@@ -1,60 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicios 3</title>
-  </head>
-  <body>
-    <!-- role="radio" -->
-    <h1>Ejemplo de role="radio"</h1>
-    <h2 id="tarjetaCredito">Tarjeta de créditos</h2>
-    <div role="radiogroup" aria-labelledby="tarjetaCredito">
-      <div role="radio" aria-checked="false" tabindex="0">Visa</div>
-      <div role="radio" aria-checked="false" tabindex="-1">MasterCard</div>
-      <div role="radio" aria-checked="false" tabindex="-1">
-        American Express
-      </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/ejercicio3.css">
+    <title>Tarea-4 / Ejercicio-3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__item"><p>item 1</p></div>
+        <div class="container__item"><p>item 2</p></div>
+        <div class="container__item"><p>item 3</p></div>
+        <div class="container__item"><p>item 4</p></div>
+        <div class="container__item"><p>item 5</p></div>
     </div>
-
-    <!-- role="table" -->
-    <h1>Ejemplo de role="table"</h1>
-    <div role="table" aria-label="Edad de estudiantes" aria-describedby="edad-estudiantes-danza" aria-rowcount="81">
-      <div id="edad-estudiantes-danza">
-        Edad de estudiantes del grupo de danza
-      </div>
-      <div role="rowgroup">
-        <div role="row">
-          <span role="columnheader" aria-sort="none">Estudiante</span>
-          <span role="columnheader" aria-sort="none">Edad</span>
-        </div>
-      </div>
-      <div role="rowgroup">
-        <div role="row" aria-rowindex="11">
-          <span role="cell">Marcos Perez</span>
-          <span role="cell">12</span>
-        </div>
-        <div role="row" aria-rowindex="16">
-          <span role="cell">Jose Castros</span>
-          <span role="cell">16</span>
-        </div>
-        <div role="row" aria-rowindex="18">
-          <span role="cell">Luis Martinez</span>
-          <span role="cell">15</span>
-        </div>
-        <div role="row" aria-rowindex="24">
-          <span role="cell">Carlos Diaz</span>
-          <span role="cell">15</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- role="img" -->
-    <h1>Ejemplo de role="img"</h1>
-    <div role="img" aria-label="Mis camisas favoritas">
-        <img src="/assets/img/camisas/CamisaRealEspaña.jpg" width="10%" alt="Camisa del club deportivo Real España" />
-        <img src="/assets/img/camisas/CamisaBarcelona.jpg" width="13%" alt="Camisa del club deportivo Barcelona" />
-      </div>
-
-  </body>
+</body>
 </html>
