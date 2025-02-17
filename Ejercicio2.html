@@ -1,93 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accesibilidad Web - Interfaz del Usuario</title>
+    <link rel="stylesheet" href="/assets/css/ejercicio2.css">
+    <title>Tarea-4 / Ejercicio-2</title>
 </head>
 <body>
-    <header>
-        <h1>Guía de Accesibilidad Web</h1>
-        <!-- Agrego el rol de navegación al nav -->
-        <nav role="navigation">
-            <!-- aumento de tamaño o el espacio suficiente ya que son objetivos táctiles y
-             agrego el rol de menu -->
-            <ul  style="font-size: 24px;" role="menu">
-                <!-- Agregar el atributo [arial-label] y describir a donde lo llevara esta opción y el rol 
-                 que es un elemento del rol de menu-->
-                <li role="menuitem"><a href="#inicio" role="button" aria-label="Ir a la sección de inicio">Inicio</a></li>
-                <li role="menuitem"><a href="#recursos" role="button" aria-label="Ir a la sección de recursos">Recursos</a></li>
-                <li role="menuitem"><a href="#contacto" role="button" aria-label="Ir a la sección de contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="inicio">
-            <h2>Introducción a la Accesibilidad Web</h2>
-            <div>
-                <!-- Agrego el atributo [aria-describedby] para proporcionar una descripción mas detallada al el elemento-->
-                <img src="https://addaw.org//cdn/admin/assets/images/galeria/SRypBs4xEP7LUMVzbO1o.jpg" alt="Imagen sobre accesibilidad web" aria-describedby="accesibilidad-web">
-                <p id="accesibilidad-web">Accesibilidad visual en la web.</p>
-            </div>
-        </section>
-
-
-        <section id="recursos">
-            <h2>Recursos de Accesibilidad</h2>
-            <article>
-                <h3>Herramientas de Lectura de Pantalla</h3>
-                <!-- Tiene comportamiento de botón -->
-                <div role="button">Descargar</div>
-            </article>
-
-            <article>
-                <h3>Verificador de Contraste</h3>
-                <!-- Tiene comportamiento de botón -->
-                <div role="button">Descargar</div>
-            </article>
-
-            <article>
-                <h3>Validador de Accesibilidad</h3>
-                <!-- Tiene comportamiento de botón -->
-                <div role="button">Descargar</div>
-            </article>
-        </section>
-
-        <section id="alert">
-            <h2>Alertas, Tooltips y Diálogos</h2>
-            <!-- Agrego el rol de alerta -->
-            <div role="alert">
-                ¡Alerta! Este es un mensaje de alerta importante!
-            </div>
-
-            <!-- Agrego el rol de alerta -->
-            <div role="alert">
-                Ayuda. Pasa el cursor sobre este texto para ver más información.
-            </div>
-
-            <!-- Agrego el rol de alerta -->
-            <div role="alert">
-                <h3>Diálogo de Accesibilidad</h3>
-                <p>Este es un diálogo donde se ofrece más información.</p>
-                <div>Cerrar diálogo</div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Accesibilidad Web - Interfaz del Usuario</p>
-        <!-- Agrego el rol de navegación al nav -->
-        <nav role="navigation">
-            <!-- aumento de tamaño o el espacio suficiente ya que son objetivos táctiles y
-             agrego el rol de menu-->
-            <ul style="font-size: 24px;" role="menu">
-                <!-- Agregar el atributo [arial-label] y describir a donde lo llevara esta opción y el rol 
-                 que es un elemento del rol de menu -->
-                <li role="menuitem"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" role="button" aria-label="Ir a explicación de políticas de privacidad">Política de Privacidad</a></li>
-                <li role="menuitem"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" role="button" aria-label="Ir a explicación de términos y condiciones">Términos y Condiciones</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <div class="container">
+        <div class="container__item"><p>item 1</p></div>
+        <div class="container__item"><p>item 2</p></div>
+        <div class="container__item"><p>item 3</p></div>
+        <div class="container__item"><p>item 4</p></div>
+        <div class="container__item"><p>item 5</p></div>
+    </div>
 </body>
 </html>
