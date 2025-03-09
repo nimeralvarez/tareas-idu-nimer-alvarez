@@ -1,0 +1,338 @@
+@use 'variables' as var;
+@use 'mixins' as mix;
+@use 'functions' as fun;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header{
+    display: flex; 
+    height: fun.dimension(60);
+    background-color: #f8f9fa;
+    @include mix.alinear(space-between, center);
+    @include mix.boxShadow();
+
+    .header__logo{
+        margin-left: fun.dimension();
+    }
+
+    .header__nav{
+        min-width: fun.dimension(390);
+
+        .nav__optionList{
+            list-style: none;
+            display: flex;
+
+            .optionList__item{
+                margin-right: fun.dimension(10);
+
+                .optionList__item--link{
+                    color: var.$colorNegro;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.description{
+    margin-top: 1px;
+    width:100%;
+
+    .description__box {
+        position: relative;
+
+        .box__image{
+            width: 100%;
+            height: fun.dimension(490);
+        }
+
+        .box__overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color:var.$colorRGBA55;
+            color: whitesmoke;
+            z-index: 1;
+            height: fun.dimension(490);
+
+            .overlay__boxDescription{
+                display: flex;
+                @include mix.alinear(flex-start, center);
+                flex-wrap: wrap;
+                margin: 0 auto 0 10px;
+                width: 40%;
+                height: fun.dimension(240);
+
+                .boxDescription__title{
+                    font-family: var.$fuenteOswald;
+                    font-size: fun.dimension(35);
+                }
+
+                .boxDescription__cover{
+                    font-family: var.$fuentePoppins;
+                }
+                
+                .boxDescription__ILearn{
+                    text-decoration: none;
+                    background-color: #f8f9fa;
+                    height: fun.dimension(20);
+                    width: fun.dimension(90);
+                    text-align: center;
+                    border-radius: fun.dimension();
+                    color: var.$azul_c;
+
+                    .boxDescription__ILearn--text{
+                        text-align: center;
+                        padding: auto 0;
+                        font-family: var.$fuenteOswald;
+                        font-weight: fun.dimension(590);
+                        cursor: pointer;
+                    }
+                }
+
+                .boxDescription__ILearn:hover{
+                    color: var.$azul_0;
+                }
+            }
+          }
+    }
+}
+
+.technologies{
+    display: flex;
+    @include mix.alinear(space-between, flex-start);
+    flex-wrap: wrap;
+    margin: fun.dimension();
+
+    .technologies__title{
+        text-align: center;
+        width: 100%;
+        font-family: var.$fuenteOswald;
+        margin-bottom: fun.dimension();
+    }
+
+    .technologies__card{
+        width: fun.dimension(220);
+        height: fun.dimension(290);
+        background-color: var.$colorBlanco;
+        background-clip: border-box;
+        border: 1px solid var.$colorRGBA125;
+        border-radius: .25rem;
+        border-radius: fun.dimension();
+        margin: 0 fun.dimension() fun.dimension() 0;
+        @include mix.boxShadow(0, 3, 5, 0, var.$colorRGBA55);
+
+        .card__header{
+            border-radius: fun.dimension() fun.dimension() 0px 0px;
+
+            .card__header--img{
+                width: 100%;
+                height:fun.dimension(120);
+                border-radius: var.$bordeRedondeado;
+                @include mix.boxShadow(0, 3, 5, 0, var.$colorRGBA55);
+            }
+        }
+
+        .card__body{
+            padding: 0 7px;
+
+            .card__body--h3{
+                text-align: center;
+                font-size:fun.dimension(10);
+                font-family: var.$fuenteOswald;
+            }
+
+            .card__body--p{
+                font-family: var.$fuentePoppins;
+                font-weight: fun.dimension(590);
+                font-size: fun.dimension(5);
+                max-height: fun.dimension(160);
+            }
+
+            .card__body--a{
+                text-decoration: none;
+                font-weight: fun.dimension(590);
+                color: var.$azul_0;
+                margin: fun.dimension(5) 0 0 fun.dimension(140);
+                font-size: 14px;
+            }
+
+            .card__body--a:hover{
+                color: #5c70ae;
+                font-weight: fun.dimension(590);
+            }
+        }
+    }
+}
+
+.contactUs{
+    display: flex;
+    @include mix.alinear(center, flex-start);
+    flex-wrap: wrap;
+    margin: fun.dimension();
+    height: fun.dimension(440);
+
+    .contactUs__title{
+        text-align: center;
+        width: 100%;
+        font-family: var.$fuenteOswald;
+        margin-bottom: fun.dimension();
+    }
+
+    .Form__FormContactUs{
+        display: flex;
+        @include mix.alinear();
+        flex-wrap: wrap;
+
+        .FormContactUs__item{
+            margin-right: fun.dimension();
+
+            .FormContactUs__item--label{
+                font-size: fun.dimension(5);
+                color: #384670;
+                font-weight: fun.dimension(590);
+                font-family: var.$fuenteOswald;
+                margin-right: 5px;
+            }
+
+            .FormContactUs__item--input{
+                outline: none;
+                border-radius: 5px;
+                width: fun.dimension(190);
+                height: fun.dimension(25);
+            }
+
+            .FormContactUs__item--input:hover{
+                @include mix.boxShadow(0, 2, 1, 0, var.$colorRGBA25);
+            }
+
+            .FormContactUs__item--input:focus{
+                outline: none;
+                border-radius: fun.dimension();
+                width: fun.dimension(190);
+                height: fun.dimension(25);
+            }
+        }
+
+        .FormContactUs__message{
+            width: 75%;
+            margin: fun.dimension(5) fun.dimension(25) fun.dimension(5) fun.dimension();
+            display: flex;
+            @include mix.alinear();
+
+            .FormContactUs__message--label{
+                font-size: fun.dimension(5);
+                color: #384670;
+                font-weight: fun.dimension(590);
+                font-family: var.$fuenteOswald;
+                margin-right: 5px;
+            }
+
+            .FormContactUs__message--textArea{
+                outline: none;
+                border-radius: 5px;
+                width: fun.dimension(440);
+            }
+
+            .FormContactUs__message--textArea:hover{
+                @include mix.boxShadow(0, 2, 1, 0, var.$colorRGBA25);
+            }
+        }
+
+        .FormContactUs__send{
+            width: 48%;
+            margin: fun.dimension() auto;
+            height: fun.dimension(35);
+            border: 1px solid var.$colorRGBA125;
+            border-radius: fun.dimension();
+            margin: 0 fun.dimension() fun.dimension() 0;
+            @include mix.boxShadow(0, 3, 5, 0, var.$colorRGBA55);
+            background-color: #384670;
+            color: #f8f9fa;
+            cursor: pointer;
+        }
+
+        .FormContactUs__send:hover{
+            background-color: #5c70ae;
+        }
+    }
+}
+
+.footer{
+    background-color: #f8f9fa;
+    /* position: fixed;  */
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    @include mix.alinear();
+    height: fun.dimension(40);
+    @include mix.boxShadow(2, -3, 2, 0,  var.$colorRGBA39);
+
+    .footer__autor{
+        font-size: 15px;
+
+        .footer__autor--twitter{
+            text-decoration: none;
+            color: #384670;
+        }
+    }
+}
+
+@media only screen and (max-width: 520px){
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+
+        .technologies{
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .header__nav{
+        max-width: fun.dimension(290);
+        min-width: 0;
+
+        .nav__optionList {
+            @include mix.alinear(start, center);
+
+            .optionList__item{
+                width: fun.dimension(80);
+                font-size: fun.dimension(4);
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .technologies{
+        justify-content: center;
+    }
+
+    .contactUs__Form {
+        width: 95%;
+
+        .Form__FormContactUs {
+            display: flex;
+            justify-content: space-between;
+
+            .FormContactUs__message {
+                width: 96%;
+            }
+
+            .FormContactUs__send {
+                width: 98%;
+                }
+        }
+    } 
+}

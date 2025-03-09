@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  background-color: #f8f9fa;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.39);
+}
+.header .header__logo {
+  margin-left: 10px;
+}
+.header .header__nav {
+  min-width: 400px;
+}
+.header .header__nav .nav__optionList {
+  list-style: none;
+  display: flex;
+}
+.header .header__nav .nav__optionList .optionList__item {
+  margin-right: 20px;
+}
+.header .header__nav .nav__optionList .optionList__item .optionList__item--link {
+  color: black;
+  text-decoration: none;
+}
+
+.description {
+  margin-top: 1px;
+  width: 100%;
+}
+.description .description__box {
+  position: relative;
+}
+.description .description__box .box__image {
+  width: 100%;
+  height: 500px;
+}
+.description .description__box .box__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: whitesmoke;
+  z-index: 1;
+  height: 500px;
+}
+.description .description__box .box__overlay .overlay__boxDescription {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto 0 10px;
+  width: 40%;
+  height: 250px;
+}
+.description .description__box .box__overlay .overlay__boxDescription .boxDescription__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+}
+.description .description__box .box__overlay .overlay__boxDescription .boxDescription__cover {
+  font-family: "Poppins", sans-serif;
+}
+.description .description__box .box__overlay .overlay__boxDescription .boxDescription__ILearn {
+  text-decoration: none;
+  background-color: #f8f9fa;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  color: #20368c;
+}
+.description .description__box .box__overlay .overlay__boxDescription .boxDescription__ILearn .boxDescription__ILearn--text {
+  text-align: center;
+  padding: auto 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600px;
+  cursor: pointer;
+}
+.description .description__box .box__overlay .overlay__boxDescription .boxDescription__ILearn:hover {
+  color: #384670;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.technologies .technologies__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
+}
+.technologies .technologies__card {
+  width: 230px;
+  height: 300px;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  border-radius: 10px;
+  margin: 0 10px 10px 0;
+  -webkit-box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+  box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+}
+.technologies .technologies__card .card__header {
+  border-radius: 10px 10px 0px 0px;
+}
+.technologies .technologies__card .card__header .card__header--img {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+  box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+}
+.technologies .technologies__card .card__body {
+  padding: 0 7px;
+}
+.technologies .technologies__card .card__body .card__body--h3 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+.technologies .technologies__card .card__body .card__body--p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600px;
+  font-size: 15px;
+  max-height: 170px;
+}
+.technologies .technologies__card .card__body .card__body--a {
+  text-decoration: none;
+  font-weight: 600px;
+  color: #384670;
+  margin: 15px 0 0 150px;
+  font-size: 14px;
+}
+.technologies .technologies__card .card__body .card__body--a:hover {
+  color: #5c70ae;
+  font-weight: 600px;
+}
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 10px;
+  height: 450px;
+}
+.contactUs .contactUs__title {
+  text-align: center;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 10px;
+}
+.contactUs .Form__FormContactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contactUs .Form__FormContactUs .FormContactUs__item {
+  margin-right: 10px;
+}
+.contactUs .Form__FormContactUs .FormContactUs__item .FormContactUs__item--label {
+  font-size: 15px;
+  color: #384670;
+  font-weight: 600px;
+  font-family: "Oswald", sans-serif;
+  margin-right: 5px;
+}
+.contactUs .Form__FormContactUs .FormContactUs__item .FormContactUs__item--input {
+  outline: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 35px;
+}
+.contactUs .Form__FormContactUs .FormContactUs__item .FormContactUs__item--input:hover {
+  -webkit-box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.25);
+}
+.contactUs .Form__FormContactUs .FormContactUs__item .FormContactUs__item--input:focus {
+  outline: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 35px;
+}
+.contactUs .Form__FormContactUs .FormContactUs__message {
+  width: 75%;
+  margin: 15px 35px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactUs .Form__FormContactUs .FormContactUs__message .FormContactUs__message--label {
+  font-size: 15px;
+  color: #384670;
+  font-weight: 600px;
+  font-family: "Oswald", sans-serif;
+  margin-right: 5px;
+}
+.contactUs .Form__FormContactUs .FormContactUs__message .FormContactUs__message--textArea {
+  outline: none;
+  border-radius: 5px;
+  width: 450px;
+}
+.contactUs .Form__FormContactUs .FormContactUs__message .FormContactUs__message--textArea:hover {
+  -webkit-box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.25);
+}
+.contactUs .Form__FormContactUs .FormContactUs__send {
+  width: 48%;
+  margin: 10px auto;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  margin: 0 10px 10px 0;
+  -webkit-box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+  box-shadow: 0 3 5 0 rgba(0, 0, 0, 0.55);
+  background-color: #384670;
+  color: #f8f9fa;
+  cursor: pointer;
+}
+.contactUs .Form__FormContactUs .FormContactUs__send:hover {
+  background-color: #5c70ae;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  /* position: fixed;  */
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  -webkit-box-shadow: 2 -3 2 0 rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 2 -3 2 0 rgba(0, 0, 0, 0.39);
+  box-shadow: 2 -3 2 0 rgba(0, 0, 0, 0.39);
+}
+.footer .footer__autor {
+  font-size: 15px;
+}
+.footer .footer__autor .footer__autor--twitter {
+  text-decoration: none;
+  color: #384670;
+}
+
+@media only screen and (max-width: 520px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body .technologies {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .header__nav {
+    max-width: 300px;
+    min-width: 0;
+  }
+  .header__nav .nav__optionList {
+    justify-content: start;
+    align-items: center;
+  }
+  .header__nav .nav__optionList .optionList__item {
+    width: 90px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .technologies {
+    justify-content: center;
+  }
+  .contactUs__Form {
+    width: 95%;
+  }
+  .contactUs__Form .Form__FormContactUs {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactUs__Form .Form__FormContactUs .FormContactUs__message {
+    width: 96%;
+  }
+  .contactUs__Form .Form__FormContactUs .FormContactUs__send {
+    width: 98%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+@use 'variables' as var;
+
+@mixin boxShadow($valor1:2px, $valor2:2px, $valor3:2px, $valor4:0px, $color:var.$colorRGBA39){
+    -webkit-box-shadow: $valor1 $valor2 $valor3 $valor4 $color;
+    -moz-box-shadow: $valor1 $valor2 $valor3 $valor4 $color;
+    box-shadow: $valor1 $valor2 $valor3 $valor4 $color;
+}
+
+@mixin alinear($horizontal:center, $vertical:center){
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
